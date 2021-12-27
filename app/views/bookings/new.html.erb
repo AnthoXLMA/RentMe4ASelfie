@@ -1,0 +1,9 @@
+<div class="container" style="height:67vh;">
+  <%= simple_form_for([@product, @booking]) do |f| %>
+    <div class="container_one">
+        <%= f.datetime_field :starts_at %>
+        <%= f.datetime_field :ends_at %>
+      <%= f.button :submit, method: :post %>
+    </div>
+  <% end %>
+</div>

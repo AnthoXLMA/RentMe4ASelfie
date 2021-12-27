@@ -10,6 +10,17 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
+    @booking = Booking.new
+    @booking.user = current_user
+    @booking.save
+  end
+
+  def categories
+    @products = Product.all
+    @product_category = @products.each do |product|
+      product.category
+    end
   end
 
   private
