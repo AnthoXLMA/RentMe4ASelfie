@@ -1,2 +1,11 @@
-<% product.name %>
-<% end %>
+<div class="container" style="height:67vh;">
+  <%= @product.name %>
+  <%= simple_form_for([@product, @booking]) do |f| %>
+      <div class="container_one">
+          <%= f.datetime_field :starts_at %>
+          <%= f.datetime_field :ends_at %>
+        <%= f.button :submit, method: :post %>
+      </div>
+    <% end %>
+  <%= link_to "Voir toutes mes réservations", bookings_path  %>
+</div>
