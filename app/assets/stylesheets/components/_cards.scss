@@ -1,0 +1,9 @@
+.cards {
+display:grid;
+grid-template-columns: 1fr 2fr 2fr 2fr;
+  img {
+    width:15vw;
+    height:20vh;
+    object-fit:contain;
+  }
+}
