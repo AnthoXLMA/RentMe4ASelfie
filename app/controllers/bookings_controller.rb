@@ -12,6 +12,10 @@ class BookingsController < ApplicationController
     @booking.save
   end
 
+  def show
+    @booking = Booking.find(params[:id])
+  end
+
   def create
     @user     = current_user
     @product  = Product.find_by(id: params[:product_id])

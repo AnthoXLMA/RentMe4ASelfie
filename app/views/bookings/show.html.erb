@@ -1,5 +1,5 @@
-<div class="container" style="height:67vh;">
-  <% product.name %>
-  <% product.price_per_rent %>
-  <% booking.starts_at %>
+<div class="container" style="height:auto;min-height: 67vh;">
+  <%= @booking.product.name %>
+  <%= @booking.product.price_per_rent %>
+  <%= @booking.starts_at %>
 </div>

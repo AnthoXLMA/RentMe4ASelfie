@@ -1,12 +1,11 @@
 <div class="container" style="height:auto;min-height: 67vh;">
   <% @products.each do | product| %>
-    <div class="cards" style="display:grid; grid-template-columns: 1fr 2fr 2fr 2fr;">
+    <div class="cards">
       <p><%= image_tag product.photo %></p>
-      <p><%= link_to product.name, product_path(product) %></p>
+      <p><%= product.name %></p>
       <p><%= product.category %></p>
       <p><%= product.price_per_rent %> €</p>
       <p><%= link_to "Book now", product_path(product.id) %></p>
     </div>
   <% end %>
-    <p><%= link_to "Accueil", root_path %></p>
 </div>

@@ -18,7 +18,7 @@ Rails.application.routes.draw do
 
   resources :products, only: [:index, :show, :new, :create, :categories]
 
-  resources :bookings, only: [:index, :new, :create, :destroy] do
+  resources :bookings, only: [:index, :new, :show, :create, :destroy] do
     resources :products, only: [:index, :new, :create, :destroy]
   end
 
