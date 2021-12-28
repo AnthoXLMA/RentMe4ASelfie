@@ -1,4 +1,7 @@
 class BookingsController < ApplicationController
+  # skip_before_action :authenticate_user!
+  # skip_before_action :authenticate_company!
+
   def index
     @bookings = Booking.all
   end

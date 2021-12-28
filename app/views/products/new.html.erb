@@ -1,0 +1,12 @@
+<div class="container" style="height:auto;min-height: 67vh;">
+  <div class="form-container">
+    <%= simple_form_for [@product] do |f| %>
+      <div class="container_one">
+      <%= f.input   :name %>
+      <%= f.input   :category %>
+      <%= f.input   :price_per_rent %>
+      <%= f.button  :submit, method: :post %>
+      </div>
+    <% end %>
+  </div>
+</div>
