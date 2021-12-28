@@ -1,0 +1,16 @@
+current directory: /Users/anthony/code/AnthoXLMA/RentMe4ASelfie/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+/Users/anthony/.rbenv/versions/2.7.4/bin/ruby -I /Users/anthony/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20211228-61603-1t9yhsm.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/anthony/code/AnthoXLMA/RentMe4ASelfie/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /Users/anthony/code/AnthoXLMA/RentMe4ASelfie/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/anthony/code/AnthoXLMA/RentMe4ASelfie/vendor/bundle/ruby/2.7.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 unf_ext.bundle ./.gem.20211228-61603-5uolr0
