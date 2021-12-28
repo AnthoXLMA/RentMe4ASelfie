@@ -27,7 +27,13 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+# Plus integrations with:
 gem 'devise'
+# gem 'activeadmin'
+# gem 'cancancan'
+# gem 'draper'
+# gem 'pundit'
+# gem 'inherited_resources'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
