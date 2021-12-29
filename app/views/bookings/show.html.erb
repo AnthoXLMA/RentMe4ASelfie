@@ -3,3 +3,5 @@
   <%= @booking.product.price_per_rent %>
   <%= @booking.starts_at %>
 </div>
+
+<%= button_to "Annuler cette réservation", booking_path, method: :delete %>

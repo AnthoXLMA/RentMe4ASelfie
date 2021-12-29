@@ -1,11 +1,11 @@
-<div class="container" style="height:auto;min-height: 67vh;">
+<div class="container" style="height:auto;min-height: 67vh; margin-top:10vh;">
   <% @products.each do | product| %>
     <div class="cards">
-      <p><%= image_tag product.photo %></p>
-      <p><%= product.name %></p>
-      <p><%= product.category %></p>
-      <p><%= product.price_per_rent %> €</p>
-      <p><%= link_to "Book now", product_path(product.id) %></p>
+      <a><%= image_tag product.photo %></a>
+      <a><%= product.name %></a>
+      <a><%= product.category %></a>
+      <a><%= product.price_per_rent %> €</a>
+      <a><%= link_to "Book now", product_path(product.id) %></a>
     </div>
   <% end %>
 </div>

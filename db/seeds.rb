@@ -5,16 +5,16 @@
 puts 'Creating products...'
 
 product1 = Product.new(
-    name: 'Tony Parker',
-    category: 'Sport',
+    name: 'Ducati',
+    category: 'Motos',
     price_per_rent: 200
 )
-product1.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product1.photo.attach(io: File.open(Rails.root.join('app/assets/images/DUCATI_PANIGALE_V4.jpeg')), filename: 'DUCATI_PANIGALE_V4.jpeg')
 product1.save
 
 product2 = Product.new(
     name: 'Lamborghini',
-    category: 'Car',
+    category: 'Cars',
     price_per_rent: 50
   )
 product2.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
@@ -29,8 +29,8 @@ product3.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpe
 product3.save
 
 product4 = Product.new(
-    name: 'Stomy Bugsy',
-    category: 'Music',
+    name: 'Ferrari F40',
+    category: 'Vehicles',
     price_per_rent: 200
 )
 product4.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
@@ -45,8 +45,8 @@ product5.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpe
 product5.save
 
 product6 = Product.new(
-    name: 'Tony Parker',
-    category: 'Sport',
+    name: 'Rio de Janeiro',
+    category: 'Travels',
     price_per_rent: 200
 )
 product6.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
