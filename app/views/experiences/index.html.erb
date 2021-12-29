@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="menu">
+     <div class="container-cards">
+    <% @experiences.each do |experience| %>
+      <div class="experiences-cards">
+        <a><%= link_to experience.name, experience_path(experience.id) %></a>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

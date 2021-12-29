@@ -1,16 +1,39 @@
 .cards {
-  border:solid 1px grey;
-  border-radius:4px;
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  margin-bottom:20px;
-  height:30vh;
-  width:60vw;
-  img {
-    padding:10px;
-    width:20vw;
-    height:30vh;
-    object-fit:contain;
+    min-height: 32vh;
+    background: white;
+    margin-top: 32px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: solid 1px #f7f3f3;
+    transition: 0.3s;
+  .card-image {
+    img {
+    width: 330px;
+    height:225px;
+    object-fit:cover;
+    }
+  }
+  .card-details {
+    h3 {
+      font-size:20px;
+    }
+    h4 {
+      font-size:20px;
+      font-weight:bold;
+    }
+  }
+  .card-click {
+    a {
+      text-decoration: none
+    }
+    a:hover {
+      font-weight: bold;
+      color:white;
+      background-color:blue;
+      border-radius:5px;
+      width:30px;
+    }
   }
   p {
     font-family: 'Roboto';

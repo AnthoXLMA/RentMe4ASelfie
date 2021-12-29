@@ -12,10 +12,6 @@ Rails.application.routes.draw do
     resources :products, only: [:index, :new, :create, :show, :update, :destroy]
   end
 
-  # resources :products, only: [:index, :new, :show, :create] do
-  #   resources :companies, only: [:index, :new, :create, :show, :update, :destroy]
-  # end
-
   resources :products, only: [:index, :show, :new, :create, :categories]
 
   resources :bookings, only: [:index, :new, :show, :create, :destroy] do
@@ -25,4 +21,6 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :new, :create, :destroy] do
     resources :bookings, only: [:index, :new, :create, :destroy]
   end
+
+  resources :experiences, only: [:index, :show]
 end

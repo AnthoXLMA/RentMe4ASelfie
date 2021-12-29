@@ -1,12 +1,12 @@
 <div class="container" style="height:67vh;">
   <div class="container-card">
-    <% @bookings.each do | booking | %>
+    <% @my_bookings.each do | my_booking | %>
     <div class="bookings-cards">
-      <a><%= link_to booking.product.name, booking_path(booking.id) %></a>
-      <a><%= image_tag booking.product.photo %></a>
-      <a><%= booking.product.price_per_rent %></a>
-      <a><%= booking.starts_at %></a>
-      <a><%= booking.ends_at %></a>
+      <a><%= link_to my_booking.product.name, booking_path(my_booking.id) %></a>
+      <a><%= image_tag my_booking.product.photo %></a>
+      <a><%= my_booking.product.price_per_rent %></a>
+      <a><%= my_booking.starts_at %></a>
+      <a><%= my_booking.ends_at %></a>
     </div>
   <% end %>
   </div>
