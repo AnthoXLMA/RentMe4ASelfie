@@ -4,12 +4,18 @@ class BookingsController < ApplicationController
 
   def index
     @bookings = Booking.all
+    @user = current_user
+    @my_bookings = @bookings.where(user_id: current_user.id)
   end
 
   def new
     # @user     = current_user
     @booking  = Booking.new
     @booking.save
+  end
+
+  def show
+    @booking = Booking.find(params[:id])
   end
 
   def create
@@ -21,6 +27,12 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to product_path(@product.id)
     end
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy
+    redirect_to bookings_path
   end
 
   private

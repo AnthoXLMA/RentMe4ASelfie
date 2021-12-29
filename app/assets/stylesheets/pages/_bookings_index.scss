@@ -1,0 +1,22 @@
+.container {
+  height:auto;
+  min-height:67vh;
+  .container-card {
+    display:grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:10px;
+  }
+  .bookings-cards {
+    width:20vw;
+    height:40vh;
+    border:solid 1px grey;
+    border-radius:3px;
+    img {
+      width:20vw;
+      height:40vh;
+      object-fit:contain;
+      padding:3px;
+    }
+  }
+}

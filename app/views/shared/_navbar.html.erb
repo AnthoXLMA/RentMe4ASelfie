@@ -1,18 +1,19 @@
-<div class="navbar" style='height:10vh;  background-color: white;box-shadow: 1px 1px 10px 1px;display:flex; justify-content: space-around'>
-  <div class="navbar-nav mr-auto">
+<div class="navbar" >
+  <div class="navbar-nav">
     <% if user_signed_in? %>
-      <div class="nav-item active" style="display:flex; justify-content: space-between; width:100vh;">
-        <a><%= link_to "Home", root_path, class: "nav-link" %></a>
-        <a><%= link_to "Products", products_path, class: "nav-link" %></a>
-        <a><%= link_to "Bookings", bookings_path, class: "nav-link" %></a>
-        <a><%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></a>
+      <div class="nav-item active" style='display:flex; justify-content: space-between'>
+        <a><%= link_to "Accueil", root_path %></a>
+        <a><%= link_to "Products", products_path %></a>
+        <a><%= link_to "Categories", experiences_path %></a>
+        <a><%= link_to "My Bookings", bookings_path %></a>
+        <a><%= link_to "Log out", destroy_user_session_path, method: :delete %></a>
       </div>
     <% else %>
-    <div class="navbar-menu" style='display:flex; justify-content: space-around'>
-      <a><%= link_to "Membres", new_user_session_path %></a>
-      <a><%= link_to "Home", root_path %></a>
+    <div class="navbar-menu" style='display:flex; justify-content: space-between'>
+      <a><%= link_to "Accueil",    root_path %></a>
       <a><%= link_to "Products", products_path  %></a>
-      <a><%= link_to "Bookings", bookings_path %></a>
+      <a><%= link_to "Categories", experiences_path %></a>
+      <a><%= link_to "Log in", new_user_session_path, method: :post %></a>
     <% end %>
     </div>
   </div>

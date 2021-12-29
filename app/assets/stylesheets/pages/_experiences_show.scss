@@ -1,0 +1,14 @@
+.container {
+  .container-cards {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:10px;
+    margin-bottom:20px;
+      .experiences-cards {
+        img {
+          width:200px;
+          height:200px;
+        }
+      }
+    }
+}

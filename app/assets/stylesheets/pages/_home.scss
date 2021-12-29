@@ -1,0 +1,36 @@
+.background {
+    position: relative;
+    width: 100%;
+    // min-height:67vh;
+    height: auto;
+  .image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+  }
+  .home-title {
+    z-index: 1;
+    h1 {
+      color:black;
+      margin-top:10vh;
+      font-weight: bold;
+      font-size:3em;
+      font-family:'Helvetica';
+    }
+    h2 {
+      color:red;
+      margin-top:3vh;
+      font-weight: bold;
+      font-size:3em;
+      font-family:'Roboto';
+    }
+    .btn-danger {
+      margin-top:10vh;
+    }
+  }
+  img {
+    width:100%;
+    height:auto;
+    min-height: 67vh;
+  }
+}

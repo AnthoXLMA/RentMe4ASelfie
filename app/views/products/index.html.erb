@@ -1,11 +1,22 @@
-<div class="container" style="height:auto;min-height: 67vh;">
-  <% @products.each do | product| %>
-    <div class="cards" style="display:grid; grid-template-columns: 1fr 2fr 2fr 2fr;">
-      <p><%= link_to product.name, product_path(product) %></p>
-      <p><%= product.category %></p>
-      <p><%= product.price_per_rent %> €</p>
-      <p><%= link_to "Book now", product_path(product.id) %></p>
-    </div>
-  <% end %>
-    <p><%= link_to "Accueil", root_path %></p>
+<div class="container" style="height:auto;min-height: 67vh; margin-top:10vh;">
+<h1>Choisissez l'expérience qui vous correspond</h1>
+  <div class="container-cards">
+    <% @products.each do | product | %>
+      <div class="cards">
+        <div class="card-image">
+          <%= image_tag product.photo %>
+        </div>
+        <div class="card-details">
+          <h3><%= product.name %></h3>
+          <h4><%= product.experience.name %></h4>
+          <a><%= product.price_per_rent %> €</a>
+        </div>
+        <div class="card-click">
+          <a><%= link_to "Book now", product_path(product.id) %></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+
+

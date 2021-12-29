@@ -1,13 +1,15 @@
 <div class="container" style="height:67vh;">
-  <div class="container-card" style="display:grid;grid-template-columns: 1fr 1fr 1fr 1fr; padding:10px;">
-    <% @bookings.each do | booking | %>
-    <div class="cards" style="width:10vw; height:20vh; border:solid 1px grey; border-radius:3px;">
-    <p><%= booking.product.name %></p>
-    <p><%= booking.product.price_per_rent %></p>
-    <p><%= booking.starts_at %></p>
-    <p><%= booking.ends_at %></p>
+  <div class="container-card">
+    <% @my_bookings.each do | my_booking | %>
+    <div class="bookings-cards">
+      <a><%= link_to my_booking.product.name, booking_path(my_booking.id) %></a>
+      <a><%= image_tag my_booking.product.photo %></a>
+      <a><%= my_booking.product.price_per_rent %></a>
+      <a><%= my_booking.starts_at %></a>
+      <a><%= my_booking.ends_at %></a>
     </div>
   <% end %>
   </div>
 <%= link_to "Revenir à tous les produits", products_path %>
+<%= link_to "Payer en ligne", products_path %>
 </div>
