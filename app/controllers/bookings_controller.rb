@@ -25,6 +25,9 @@ class BookingsController < ApplicationController
     @booking.user = current_user
     flash.alert = "Votre réservation est confirmée"
     if @booking.save
+      mail = BookingMailer.with(booking: @booking).confirmation_booking
+      mail.deliver_now
+      # redirect_to booking_path(@booking)
       redirect_to product_path(@product.id)
     end
   end

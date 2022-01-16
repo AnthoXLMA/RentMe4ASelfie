@@ -4,11 +4,12 @@
     grid-template-columns:1fr 1fr 1fr;
     grid-gap:10px;
     margin-bottom:20px;
-      .experiences-cards {
+    }
+    .experiences-cards {
         img {
-          width:200px;
-          height:200px;
+          width:70vh;
+          height:70vh;
+          object-fit:contain;
         }
-      }
     }
 }
