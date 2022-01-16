@@ -15,7 +15,7 @@ experience3.save
 experience4 = Experience.create(name: 'Celebrities')
 experience4.save
 
-experience5 = Experience.create(name: 'Diary')
+experience5 = Experience.create(name: 'People')
 experience5.save
 
 puts 'Creating products...'
@@ -43,7 +43,7 @@ product3 = Product.new(
     price_per_rent: 30,
     experience_id: experience3.id
 )
-product3.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product3.photo.attach(io: File.open(Rails.root.join('app/assets/images/joker.jpeg')), filename: 'joker.jpeg')
 product3.save
 
 product4 = Product.new(
@@ -52,16 +52,16 @@ product4 = Product.new(
     price_per_rent: 200,
     experience_id: experience2.id
 )
-product4.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product4.photo.attach(io: File.open(Rails.root.join('app/assets/images/F40.jpeg')), filename: 'F40.jpeg')
 product4.save
 
 product5 = Product.new(
-    name: 'Michael Jackson',
-    category: 'Celebrity',
+    name: 'Dancer',
+    category: 'Diary',
     price_per_rent: 400,
     experience_id: experience5.id
 )
-product5.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product5.photo.attach(io: File.open(Rails.root.join('app/assets/images/dancer.jpeg')), filename: 'dancer.jpeg')
 product5.save
 
 product6 = Product.new(
@@ -74,21 +74,21 @@ product6.photo.attach(io: File.open(Rails.root.join('app/assets/images/rio_dej.j
 product6.save
 
 product7 = Product.new(
-    name: 'Ferrari F40',
+    name: 'Porsche 911',
     category: 'Vehicles',
     price_per_rent: 200,
     experience_id: experience4.id
 )
-product7.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product7.photo.attach(io: File.open(Rails.root.join('app/assets/images/porsche_911.jpeg')), filename: 'porsche_911.jpeg')
 product7.save
 
 product8 = Product.new(
-    name: 'Ducati 40',
-    category: 'Moto',
+    name: 'Chrysler 300',
+    category: 'Vehicles',
     price_per_rent: 150,
     experience_id: experience2.id
 )
-product8.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product8.photo.attach(io: File.open(Rails.root.join('app/assets/images/chrysler-300-2020.jpeg')), filename: 'chrysler-300-2020.jpeg')
 product8.save
 
 product9 = Product.new(
@@ -97,7 +97,7 @@ product9 = Product.new(
     price_per_rent: 230,
     experience_id: experience5.id
 )
-product9.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product9.photo.attach(io: File.open(Rails.root.join('app/assets/images/br_spears.jpeg')), filename: 'br_spears.jpeg')
 product9.save
 
 product10 = Product.new(
@@ -106,7 +106,7 @@ product10 = Product.new(
     price_per_rent: 200,
     experience_id: experience2.id
 )
-product10.photo.attach(io: File.open(Rails.root.join('app/assets/images/lambo.jpeg')), filename: 'lambo.jpeg')
+product10.photo.attach(io: File.open(Rails.root.join('app/assets/images/yacht.jpeg')), filename: 'yacht.jpeg')
 product10.save
 
 # AdminUser.create!(email: 'admi@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

@@ -4,7 +4,7 @@
   <a>Choisissez l'expérience qui vous correspond</a>
     <h1><%= @experience.name %></h1>
     <div class:="container-card">
-        <a><% @experience_products.each do |experience_product| %><a>
+        <% @experience_products.each do |experience_product| %>
         <div class="experiences-cards">
           <%= image_tag experience_product.photo %>
           <h2><%= experience_product.name %></h2>

@@ -1,7 +1,7 @@
-<div class="container" style="height:67vh;">
+<div class="container" style="min-height:67vh;">
   <div class="container-card">
     <% @my_bookings.each do | my_booking | %>
-    <div class="bookings-cards">
+    <div class="bookings-cards" style="height:auto;">
       <a><%= link_to my_booking.product.name, booking_path(my_booking.id) %></a>
       <a><%= image_tag my_booking.product.photo %></a>
       <a><%= my_booking.product.price_per_rent %></a>
@@ -12,4 +12,5 @@
   </div>
 <%= link_to "Revenir à tous les produits", products_path %>
 <%= link_to "Payer en ligne", products_path %>
+<%= link_to "Finaliser votre réservation", bookings_path %>
 </div>
