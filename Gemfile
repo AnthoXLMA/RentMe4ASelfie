@@ -29,6 +29,7 @@ gem 'simple_form'
 gem 'bootsnap', '>= 1.4.4', require: false
 # Plus integrations with:
 gem 'devise'
+gem 'letter_opener', group: :development
 # gem 'activeadmin'
 # gem 'cancancan'
 # gem 'draper'

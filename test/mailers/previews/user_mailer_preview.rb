@@ -5,4 +5,9 @@ class UserMailerPreview < ActionMailer::Preview
     # This is how you pass value to params[:user] inside mailer definition!
     UserMailer.with(user: user).welcome_email
   end
+
+  def confirmation
+    user = User.first
+    UserMailer.with(user: user).confirmation_booking
+  end
 end
