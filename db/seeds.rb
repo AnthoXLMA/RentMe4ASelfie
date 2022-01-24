@@ -21,7 +21,7 @@ experience5.save
 puts 'Creating products...'
 product1 = Product.new(
     name: 'Ducati',
-    category: 'Motos',
+    category: 'Vehicles',
     price_per_rent: 200,
     experience_id: experience2.id
 )
@@ -30,7 +30,7 @@ product1.save
 
 product2 = Product.new(
     name: 'Lamborghini',
-    category: 'Cars',
+    category: 'Vehicles',
     price_per_rent: 50,
     experience_id: experience2.id
   )
@@ -39,9 +39,9 @@ product2.save
 
 product3 = Product.new(
     name: 'Clown',
-    category: 'Diary',
+    category: 'Clothes',
     price_per_rent: 30,
-    experience_id: experience3.id
+    experience_id: experience5.id
 )
 product3.photo.attach(io: File.open(Rails.root.join('app/assets/images/joker.jpeg')), filename: 'joker.jpeg')
 product3.save
@@ -77,7 +77,7 @@ product7 = Product.new(
     name: 'Porsche 911',
     category: 'Vehicles',
     price_per_rent: 200,
-    experience_id: experience4.id
+    experience_id: experience2.id
 )
 product7.photo.attach(io: File.open(Rails.root.join('app/assets/images/porsche_911.jpeg')), filename: 'porsche_911.jpeg')
 product7.save
@@ -95,7 +95,7 @@ product9 = Product.new(
     name: 'Britney Spears',
     category: 'Celebrity',
     price_per_rent: 230,
-    experience_id: experience5.id
+    experience_id: experience4.id
 )
 product9.photo.attach(io: File.open(Rails.root.join('app/assets/images/br_spears.jpeg')), filename: 'br_spears.jpeg')
 product9.save
